@@ -1,0 +1,79 @@
+.main {
+    background:
+        linear-gradient(90deg, #D5EBFB 80%, transparent 20%) no-repeat;
+    background-size: 60% 60%;
+
+    @include media-breakpoint-up(lg) {
+        background:
+            linear-gradient(0deg, #D5EBFB 60%, transparent 40%) no-repeat, ;
+        background-size: 60% 100%, ;
+    }
+}
+
+.banner {
+    background: url(../images/banner.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+
+    @include media-breakpoint-up(lg) {
+        .fanct {
+            &-topLeft {
+                border-top-left-radius: 200px;
+            }
+        }
+
+        &.fanct {
+            width: 80%;
+            border-radius: 14% 86% 0% 100% / 50% 0% 100% 50%;
+        }
+    }
+}
+
+
+
+.title {
+    color: #004097CC;
+    font-size: 86px;
+    line-height: 1.5;
+    text-shadow: 0 3px 12px #FFFFFF29, 0 3px 12px #FCFCFC;
+    margin-bottom: 0;
+    z-index: 1;
+
+    &-span {
+        color: #004097CC;
+        font-size: 48px;
+        line-height: 1.5;
+        text-shadow: 4px 4px 1px #fff;
+        font-weight: 400;
+        font-family: GenSenRounded-R;
+        z-index: 1;
+    }
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.w-1 {
+    width: 50px;
+}
+
+.shadow {
+    box-shadow: 0 15px 43px #0000000D;
+}
+
+.shadow {
+    box-shadow: 0 25px 45px #00000029;
+}
+
+@include media-breakpoint-up(lg) {
+    .z-1 {
+        z-index: 1;
+    }
+}
+
+.seaScapes {
+    background: linear-gradient(#D5EBFB);
+
+}
